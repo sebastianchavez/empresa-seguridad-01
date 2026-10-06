@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad · VigilPro</title>
+  <meta name="description" content="Política de privacidad de VigilPro. Cómo recopilamos, usamos y protegemos tus datos personales." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+        colors: { brand: { 50:'#fffbeb',100:'#fef3c7',200:'#fde68a',300:'#fcd34d',400:'#fbbf24',500:'#f59e0b',600:'#d97706',700:'#b45309',800:'#92400e',900:'#78350f' } }
+      } }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="font-sans bg-white text-slate-800 antialiased">
+
+  <!-- NAVBAR -->
+  <header data-navbar class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-2 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-900 to-slate-700 flex items-center justify-center text-amber-500 shadow-lg group-hover:scale-110 transition-transform">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+          </div>
+          <div class="leading-tight">
+            <div class="font-extrabold text-xl text-slate-900">Vigil<span class="text-amber-600">Pro</span></div>
+            <div class="text-[10px] uppercase tracking-widest text-slate-500 font-semibold">Seguridad Privada</div>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+          <a href="index.html" class="text-slate-700 hover:text-amber-600 transition-colors">Inicio</a>
+          <a href="nosotros.html" class="text-slate-700 hover:text-amber-600 transition-colors">Nosotros</a>
+          <a href="servicios.html" class="text-slate-700 hover:text-amber-600 transition-colors">Servicios</a>
+          <a href="precios.html" class="text-slate-700 hover:text-amber-600 transition-colors">Precios</a>
+          <a href="horarios.html" class="text-slate-700 hover:text-amber-600 transition-colors">Horarios</a>
+          <a href="galeria.html" class="text-slate-700 hover:text-amber-600 transition-colors">Galería</a>
+          <a href="contacto.html" class="text-slate-700 hover:text-amber-600 transition-colors">Contacto</a>
+        </nav>
+        <div class="hidden lg:block">
+          <a href="contacto.html" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-700 text-white text-sm font-semibold shadow-md">
+            Solicitar cotización
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+          </a>
+        </div>
+        <button data-menu-toggle aria-expanded="false" aria-label="Abrir menú" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+        </button>
+      </div>
+    </div>
+    <div data-menu-panel class="hidden lg:hidden absolute top-20 left-0 right-0 bg-white shadow-xl border-t border-slate-100 anim-fade-in-down">
+      <nav class="flex flex-col px-6 py-4 gap-1 text-base font-medium">
+        <a href="index.html" class="py-2.5 px-3 rounded-lg hover:bg-amber-50 text-slate-700">Inicio</a>
+        <a href="nosotros.html" class="py-2.5 px-3 rounded-lg hover:bg-amber-50 text-slate-700">Nosotros</a>
+        <a href="servicios.html" class="py-2.5 px-3 rounded-lg hover:bg-amber-50 text-slate-700">Servicios</a>
+        <a href="precios.html" class="py-2.5 px-3 rounded-lg hover:bg-amber-50 text-slate-700">Precios</a>
+        <a href="horarios.html" class="py-2.5 px-3 rounded-lg hover:bg-amber-50 text-slate-700">Horarios</a>
+        <a href="galeria.html" class="py-2.5 px-3 rounded-lg hover:bg-amber-50 text-slate-700">Galería</a>
+        <a href="contacto.html" class="py-2.5 px-3 rounded-lg hover:bg-amber-50 text-slate-700">Contacto</a>
+        <a href="contacto.html" class="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-amber-500 to-amber-700 text-white text-sm font-semibold">Solicitar cotización</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative pt-32 pb-12 md:pt-40 md:pb-16 overflow-hidden bg-gradient-to-br from-slate-50 via-slate-100 to-amber-50">
+    <div class="hero-blob bg-amber-500" style="top:-100px; left:-100px; width:400px; height:400px; opacity:0.18;"></div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="anim-fade-in-up">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white shadow-md border border-amber-100 text-xs font-semibold text-amber-700 tracking-wide uppercase">Documento legal</span>
+        <h1 class="mt-6 text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+          Política de <span class="gradient-text">privacidad</span>
+        </h1>
+        <p class="mt-4 text-slate-600">Última actualización: <span data-year>2026</span>. Tu privacidad es nuestra prioridad.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose-content">
+
+      <div class="p-6 rounded-2xl bg-amber-50 border border-amber-100 mb-10 flex items-start gap-4">
+        <div class="w-10 h-10 rounded-full bg-amber-500 text-white flex items-center justify-center flex-shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+        </div>
+        <p class="text-sm text-slate-700">En VigilPro tratamos tus datos personales con el máximo cuidado y conforme a la Ley N° 19.628 sobre Protección de Datos Personales de Chile. Este documento explica qué datos recopilamos, cómo los usamos y cuáles son tus derechos.</p>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4">1. Responsable del tratamiento</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">VigilPro Seguridad Privada SpA, RUT 76.XXX.XXX-X, con domicilio en Av. Apoquindo 4501, Piso 12, Las Condes, Santiago de Chile, es el responsable del tratamiento de los datos personales recopilados a través de este sitio web.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4">2. Datos que recopilamos</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">Recopilamos los siguientes datos personales cuando nos contactas o utilizas nuestros servicios:</p>
+      <ul class="list-disc pl-6 space-y-2 text-slate-700">
+        <li><strong>Datos de identificación:</strong> nombre completo, RUT, fecha de nacimiento.</li>
+        <li><strong>Datos de contacto:</strong> dirección, teléfono, correo electrónico.</li>
+        <li><strong>Datos del servicio:</strong> tipo de propiedad a proteger, ubicación, necesidades específicas.</li>
+        <li><strong>Datos de pago:</strong> información necesaria para procesar los pagos de los servicios contratados.</li>
+        <li><strong>Datos técnicos:</strong> dirección IP, tipo de navegador, dispositivo (recopilados automáticamente).</li>
+      </ul>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4">3. Finalidad del tratamiento</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">Tus datos personales son utilizados para las siguientes finalidades:</p>
+      <ul class="list-disc pl-6 space-y-2 text-slate-700">
+        <li>Gestionar tu solicitud de cotización o contacto.</li>
+        <li>Prestar los servicios contratados y emitir la documentación asociada.</li>
+        <li>Cumplir con obligaciones legales, tributarias y regulatorias.</li>
+        <li>Coordinar la operación de monitoreo y respuesta ante incidentes.</li>
+        <li>Enviar comunicaciones comerciales sobre nuestros servicios (sólo si lo autorizas).</li>
+        <li>Mejorar nuestros servicios y la experiencia en el sitio web.</li>
+      </ul>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4">4. Conservación de los datos</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">Conservamos tus datos personales mientras dure la relación contractual y, posteriormente, durante el plazo que exija la legislación aplicable (generalmente 6 años para fines tributarios). Las grabaciones de CCTV se conservan por un máximo de 30 días salvo requerimiento legal o investigación en curso.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4">5. Transferencia de datos</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">Tus datos pueden ser compartidos con:</p>
+      <ul class="list-disc pl-6 space-y-2 text-slate-700">
+        <li>Proveedores de servicios de almacenamiento en la nube (bajo acuerdos de confidencialidad).</li>
+        <li>Entidades financieras para procesar pagos.</li>
+        <li>Autoridades competentes cuando sea requerido por ley.</li>
+      </ul>
+      <p class="text-slate-700 leading-relaxed mt-4">No vendemos ni comercializamos tus datos personales con terceros.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4">6. Seguridad de la información</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">Implementamos medidas técnicas y organizativas para proteger tus datos contra acceso no autorizado, pérdida o destrucción. Esto incluye encriptación, controles de acceso, sistemas de respaldo y auditorías periódicas. Nuestro personal firma acuerdos de confidencialidad y recibe capacitación continua en protección de datos.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4">7. Derechos del titular</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">Conforme a la legislación vigente, tienes derecho a:</p>
+      <ul class="list-disc pl-6 space-y-2 text-slate-700">
+        <li><strong>Acceso:</strong> conocer qué datos personales tenemos sobre ti.</li>
+        <li><strong>Rectificación:</strong> corregir datos inexactos o incompletos.</li>
+        <li><strong>Cancelación:</strong> solicitar la eliminación de tus datos cuando proceda.</li>
+        <li><strong>Oposición:</strong> oponerte al tratamiento de tus datos para finalidades específicas.</li>
+      </ul>
+      <p class="text-slate-700 leading-relaxed mt-4">Para ejercer estos derechos, escríbenos a <a href="mailto:privacidad@vigilpro.cl" class="text-amber-600 font-semibold hover:underline">privacidad@vigilpro.cl</a>.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4">8. Cookies y tecnologías similares</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">Este sitio web utiliza cookies para mejorar tu experiencia. Las cookies son pequeños archivos que se almacenan en tu navegador. Puedes configurar tu navegador para rechazar todas las cookies o para que te avise cuando se envíe una. Sin embargo, algunas funciones del sitio podrían no funcionar correctamente sin cookies.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4">9. Enlaces a terceros</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">Nuestro sitio puede contener enlaces a otros sitios web. No somos responsables de las prácticas de privacidad de esos sitios. Te recomendamos leer sus políticas de privacidad antes de proporcionar tus datos.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4">10. Cambios a esta política</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Los cambios serán publicados en esta página y, si son significativos, te lo notificaremos por correo electrónico.</p>
+
+      <div class="mt-12 p-6 rounded-2xl bg-slate-50 border border-slate-100">
+        <h3 class="font-bold text-slate-900">¿Tienes preguntas?</h3>
+        <p class="text-sm text-slate-600 mt-2">Si tienes dudas sobre esta política o sobre el tratamiento de tus datos personales, no dudes en contactarnos.</p>
+        <div class="mt-4 flex flex-wrap gap-3">
+          <a href="mailto:privacidad@vigilpro.cl" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 text-white text-sm font-semibold hover:bg-slate-800 transition-colors">
+            privacidad@vigilpro.cl
+          </a>
+          <a href="contacto.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-amber-500 text-white text-sm font-semibold hover:bg-amber-600 transition-colors">
+            Contactar
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <a href="index.html" class="flex items-center gap-2">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center text-amber-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            </div>
+            <span class="font-extrabold text-xl text-white">Vigil<span class="text-amber-500">Pro</span></span>
+          </a>
+          <p class="mt-4 text-sm leading-relaxed text-slate-400">Empresa líder en seguridad privada en Chile. Protección profesional y tecnología de punta desde 2006.</p>
+        </div>
+        <div><h4 class="text-white font-bold mb-4">Empresa</h4><ul class="space-y-2 text-sm"><li><a href="nosotros.html" class="hover:text-amber-400 transition-colors">Nosotros</a></li><li><a href="servicios.html" class="hover:text-amber-400 transition-colors">Servicios</a></li><li><a href="precios.html" class="hover:text-amber-400 transition-colors">Precios</a></li><li><a href="galeria.html" class="hover:text-amber-400 transition-colors">Galería</a></li></ul></div>
+        <div><h4 class="text-white font-bold mb-4">Información</h4><ul class="space-y-2 text-sm"><li><a href="horarios.html" class="hover:text-amber-400 transition-colors">Horarios</a></li><li><a href="contacto.html" class="hover:text-amber-400 transition-colors">Contacto</a></li><li><a href="politicas.html" class="hover:text-amber-400 transition-colors">Políticas de privacidad</a></li><li><a href="terminos.html" class="hover:text-amber-400 transition-colors">Términos y condiciones</a></li></ul></div>
+        <div><h4 class="text-white font-bold mb-4">Contacto</h4><ul class="space-y-3 text-sm"><li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-0.5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg><span>Av. Apoquindo 4501, Piso 12, Las Condes, Santiago</span></li><li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg><span>+56 9 6234 5810</span></li><li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89-5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg><span>contacto@vigilpro.cl</span></li></ul></div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+        <p>© <span data-year>2026</span> VigilPro Seguridad Privada. Todos los derechos reservados.</p>
+        <p class="flex gap-6"><a href="politicas.html" class="hover:text-amber-400 transition-colors">Privacidad</a><a href="terminos.html" class="hover:text-amber-400 transition-colors">Términos</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
