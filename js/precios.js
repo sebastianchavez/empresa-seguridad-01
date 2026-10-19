@@ -18,9 +18,9 @@
         <div class="p-7 md:p-8">
           <h3 class="text-xl font-bold ${p.destacado ? 'text-white' : 'text-slate-900'}">${p.nombre}</h3>
           <p class="mt-2 text-sm ${p.destacado ? 'text-slate-300' : 'text-slate-500'}">${p.descripcion}</p>
-          <div class="mt-6 flex items-baseline gap-1">
+          <div class="mt-6 plan-price">
             <span class="text-sm ${p.destacado ? 'text-slate-300' : 'text-slate-500'}">$</span>
-            <span class="text-5xl font-extrabold ${p.destacado ? 'text-amber-400' : 'gradient-text'}">${fmt(p.precio)}</span>
+            <span class="price-value font-extrabold ${p.destacado ? 'text-amber-400' : 'gradient-text'}">${fmt(p.precio)}</span>
             <span class="text-sm ${p.destacado ? 'text-slate-300' : 'text-slate-500'}">/ ${p.periodicidad}</span>
           </div>
           <a href="contacto.html?plan=${p.id}" class="mt-6 inline-flex w-full justify-center items-center gap-2 px-5 py-3 rounded-full ${p.destacado ? 'bg-gradient-to-r from-amber-500 to-amber-700 text-white' : 'bg-slate-900 text-white'} font-semibold hover:opacity-90 transition-opacity btn-primary">

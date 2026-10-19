@@ -31,12 +31,14 @@
     const closeMenu = () => {
       panel.classList.add("hidden");
       toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Abrir menú");
       document.body.classList.remove("no-scroll");
     };
 
     const openMenu = () => {
       panel.classList.remove("hidden");
       toggle.setAttribute("aria-expanded", "true");
+      toggle.setAttribute("aria-label", "Cerrar menú");
       document.body.classList.add("no-scroll");
     };
 
@@ -51,6 +53,10 @@
 
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") closeMenu();
+    });
+
+    window.matchMedia("(min-width: 1024px)").addEventListener("change", (e) => {
+      if (e.matches) closeMenu();
     });
   }
 
